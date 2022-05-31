@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* inicio nav */
+.navbar{
+    background-image: url(../img/img9.jpg);
+    background-size: cover ;
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar-brand{
+    font-size: 35px;
+}
+span{
+    color: orangered;
+}
+.nav-link{
+    font-size: 25px;
+}
+.sol{
+    font-size: 30px;
+    color: rgb(228, 228, 5);
+    margin-right: 10px;
+}
+.sol a{
+    font-size: 20px;
+    text-decoration: none;
+    color: orangered;
+}
+.sol a:hover{
+    color: rgb(192, 51, 0);
+}
+.sol i{
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+/* fin nav */
+
+/* inicio main */
+
+/* inicio section noticias */
+main{
+    background-color: #333;
+    margin-top: 79px;
+}
+.noticias{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.noticias h1{
+    color: black;
+    text-transform: capitalize;
+}
+.noticias p{
+    color: wheat;
+}
+/* fin section noticias */
+
+
+
+/* inicio section video */
+.carousel-indicators li{
+    border-radius: 35%;
+    height: 20px;
+    width: 20px;
+}
+.video h1{
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+}
+/* fin section video */
+
+/* fin main */
+
+/* inicio footer */
+footer{
+    background-image: url(../img/img10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.redes{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: orange;
+}
+.redes i{
+    letter-spacing: 40px;
+}
+#facebook:hover{
+    color: blue;
+}
+#instagram:hover{
+    color: purple;
+}
+#twitter:hover{
+    color: rgb(0, 162, 255);
+}
+.subir{
+    border: solid orange;
+    background-color: orange;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 70%;
+}
+.subir i{
+    font-size: 25px;
+    color: orangered;
+}
+/* fin footer */
+
+/* inicio pagina clima */
+.clima{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* inicio section publicidad */
+.publicidad1{
+    border-radius: 3%;
+    color: wheat;
+    background-image: url(../img/img4.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: sticky;
+    top: 80px;
+}
+.publicidad h1{
+    color: black;
+}
+.publicidad p{
+    color: wheat;
+}
+/* fin section publicidad */
+
+/* inicio section galeria */
+.sectionGaleria h2{
+    color: orange;
+    text-transform: uppercase;
+}
+.item{
+    height: 220px;
+    border-radius: 20%;
+    background-size: cover;
+    background-position: center;
+}
+.item:hover{
+    transform: scale(1.04);
+    transition: all 0.7s;
+}
+.item1{
+    background-image: url(../img/img1.jpg);
+}
+.item2{
+    background-image: url(../img/img2.jpg);
+}
+.item3{
+    background-image: url(../img/img3.png);
+}
+.item4{
+    background-image: url(../img/img4.jpg);
+}
+.item5{
+    background-image: url(../img/img5.jpg);
+}
+.item6{
+    background-image: url(../img/img11.jpg);
+}
+.item7{
+    background-image: url(../img/img7.jpg);
+}
+.item8{
+    background-image: url(../img/img8.jpg);
+}
+.item9{
+    height: 33px;
+}
+.item10{
+    height: 33px;
+}
+.item11{
+    height: 33px;
+}
+/* fin section galeria */
+
+/* fin pagina clima */
+
+/* inicio pagina contacto */
+.contacto{
+    height: 900px;
+}
+.contacto h1{
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+    text-shadow: wheat 2px 2px 1px;
+}
+.contacto label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: wheat;
+}
+/* fin pagina contacto */
+
+@keyframes efecto {
+    0%{transform: rotatey(0deg);}
+    10%{transform: rotatey(20deg);}
+    20%{transform: rotatey(30deg);}
+    30%{transform: rotatey(70deg);}
+    50%{transform: rotatey(120deg);}
+    60%{transform: rotatey(180deg);}
+    70%{transform: rotatey(220deg);}
+    80%{transform: rotatey(280deg);}
+    90%{transform: rotatey(320deg);}
+    100%{transform: rotatey(360deg);}
+}
+
+@media only screen and (min-width:320px) and (max-width:991px){
+    .sol{
+        position: absolute;
+        right: 95px;
+    }
+}
+@media only screen and (min-width:992px){
+    .navbar{
+        height: 130px;
+    }
+    main{
+        margin-top: 130px;
+    }
+    .publicidad1{
+        top: 130px;
+    }
+}
